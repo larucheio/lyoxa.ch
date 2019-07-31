@@ -2,3 +2,12 @@
 ---
 
 @import "bootstrap/bootstrap";
+
+.file.file-pdf {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('/img/icons/file-pdf.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

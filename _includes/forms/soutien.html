@@ -1,0 +1,138 @@
+<div id="soutien">
+  <form v-on:submit.prevent="onSubmit" id="needs-validation" v-if="!formSubmittedSuccessfully && !errorAfterSubmission" novalidate>
+    <p><span class="text-danger">*</span> = Champ requis</p>
+
+    <div class="alert alert-danger" role="alert" v-if="formIsSubmitted && !formIsValid">
+      Une/plusieurs erreur(s) est/sont présente(s) dans le formulaire; merci de la/les corriger.
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-sm-6">
+        <label for="contactInputFirstname">Prénom <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="contactInputFirstname" v-model="contact.firstName" required>
+        <div class="invalid-feedback">
+          Le prénom est requis
+        </div>
+      </div>
+      <div class="form-group col-sm-6">
+        <label for="contactInputName">Nom <span class="text-danger">*</span></label>
+        <input class="form-control" id="contactInputName" v-model="contact.name" required>
+        <div class="invalid-feedback">
+          Le nom est requis
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-sm-6">
+        <label for="contactInputEmail">Adresse e-mail</label>
+        <input type="email" class="form-control" id="contactInputEmail" v-model="contact.email">
+      </div>
+      <div class="form-group col-sm-6">
+        <label for="contactInputPhone">Numéro de téléphone</label>
+        <input type="tel" class="form-control" id="contactInputPhone" v-model="contact.phone">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="contactInputDemand">Adresse postale</label>
+      <textarea class="form-control" id="contactInputDemand" rows="8" cols="80" v-model="contact.address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="">Souhaitez-vous recevoir notre rapport d’activité annuel par :</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="raRadio" id="raRadio1" value="email" v-model="contact.ra" checked>
+        <label class="form-check-label" for="raRadio1">
+          Email
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="raRadio" id="raRadio2" value="ecrit" v-model="contact.ra">
+        <label class="form-check-label" for="raRadio2">
+          Écrit
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="raRadio" id="raRadio3" value="non" v-model="contact.ra">
+        <label class="form-check-label" for="raRadio3">
+          Je ne souhaite pas recevoir le rapport d'activité.
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-check">
+        <input id="invalidCheck" class="form-check-input" type="checkbox" v-model="contact.legal" required>
+        <label class="form-check-label" for="invalidCheck">
+          Je souhaite devenir membre de soutien de l’Association Lyoxa et m’engage à verser une cotisation annuelle de 80.- CHF au plus tard le 1er décembre de l’année courante. <span class="text-danger">*</span>
+        </label>
+        <div class="invalid-feedback">
+          Requis
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-danger" role="alert" v-if="formIsSubmitted && !formIsValid">
+      Une/plusieurs erreur(s) est/sont présente(s) dans le formulaire; merci de la/les corriger.
+    </div>
+
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+
+  <div class="alert alert-success" role="alert" v-if="formSubmittedSuccessfully">
+    Nous vous remercions pour votre demande de soutien. Le Comité vous enverra prochainement un courriel afin de confirmer votre adhésion à l’Association.
+  </div>
+
+  <div class="alert alert-danger" role="alert" v-if="errorAfterSubmission">
+    Une erreur s'est produite lors de la soumission du formulaire. Merci de réessayer ou de <a href="mailto:julien.grunhagel@lyoxa.ch" class="alert-link">contacter le support</a>.
+  </div>
+</div>
+
+<script>
+new Vue({
+  el: '#soutien',
+  data () {
+    return {
+      formIsSubmitted: false,
+      servicesAreInvalid: false,
+      formIsValid: false,
+      formSubmittedSuccessfully: false,
+      errorAfterSubmission: false,
+      contact: {
+        firstName: '',
+        name: '',
+        email: '',
+        phone: '',
+        address: '',
+        ra: 'email',
+        legal: false
+      }
+    }
+  },
+  methods: {
+    validateForm () {
+      const form = document.getElementById('needs-validation')
+      if (form.checkValidity() !== false) {
+        this.formIsValid = true
+        return true
+      }
+      form.classList.add('was-validated')
+      return false
+    },
+    onSubmit () {
+      this.formIsSubmitted = true
+      if (this.validateForm()) {
+        let apiURL = 'https://bp60k0083l.execute-api.eu-central-1.amazonaws.com/prod/lyoxasoutienform'
+        this.$axios
+          .$post(apiURL, JSON.stringify(this.contact))
+          .then(response => {
+            this.formSubmittedSuccessfully = true
+            this.errorAfterSubmission = false
+          }, response => {
+            this.formSubmittedSuccessfully = false
+            this.errorAfterSubmission = true
+          })
+      }
+    }
+  }
+})
+</script>

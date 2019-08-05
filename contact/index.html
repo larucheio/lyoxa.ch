@@ -1,0 +1,30 @@
+---
+layout: main
+---
+
+<section class="container">
+  <h1>Contact</h1>
+
+  <h2>Nouvelle demande</h2>
+  <div class="row">
+    <div class="col">
+      <p class="lead">Merci de nous faire parvenir toutes vos demandes via le <a href="/formulaire-de-demande/">formulaire de demande</a>.</p>
+      <a class="btn btn-primary btn-lg" href="/formulaire-de-demande/" role="button">Formulaire de demande</a>
+    </div>
+  </div>
+
+  <h2 class="mt-5">Association Lyoxa</h2>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="row" itemscope itemtype="http://schema.org/Person">
+        <div class="col-md-6">
+          <img src="/img/logo.svg" alt="Association Lyoxa" class="w-100 mb-3" itemprop="image">
+        </div>
+        <div class="col-md-6">
+          <p class="font-weight-bold mb-0 text-uppercase" itemprop="name">Association Lyoxa</p>
+          <a v-if="email" :href="`mailto:${email}`" itemprop="email">info@lyoxa.ch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,4 @@
+url: "https://lyoxa.ch"
+
+plugins:
+  - jekyll-sitemap

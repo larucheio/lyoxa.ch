@@ -1,0 +1,38 @@
+@if index($hamburger-types, minus) {
+  /*
+   * Minus
+   */
+  .hamburger--minus {
+    .hamburger-inner {
+      &::before,
+      &::after {
+        transition: bottom 0.35s 0s ease,
+                    top 0.35s 0s ease,
+                    opacity 0s ease;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      .hamburger-inner {
+        background-color: $red;
+        transition: background-color 0.35s ease;
+        &::before,
+        &::after {
+          background-color: $red;
+          opacity: 0;
+          transition: bottom 0.35s ease,
+                      top 0.35s ease,
+                      opacity 0s 0.35s ease,
+                      background-color 0.35s ease;
+        }
+        &::before {
+          top: 0;
+        }
+
+        &::after {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

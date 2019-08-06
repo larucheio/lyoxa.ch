@@ -1,0 +1,15 @@
+@include media-breakpoint-up(lg) {
+  .navbar {
+    padding-top: 0;
+  }
+  .navbar-brand {
+    padding-top: calc(.5rem + 3px);
+  }
+  .nav-item {
+    border-top: 3px solid #fff;
+    padding-top: .5rem;
+  }
+  .active {
+    border-top: 3px solid #cb0000;
+  }
+}

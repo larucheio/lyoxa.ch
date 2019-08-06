@@ -9,42 +9,42 @@
 
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
+        <li class="nav-item {% if '/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/">Accueil</a>
         </li>
-        <li class="nav-item active dropdown">
+        <li class="nav-item dropdown {% if page.url contains '/lyoxa/' %}active{% endif %}">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLyoxa" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Lyoxa
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLyoxa">
-            <a class="dropdown-item" href="/lyoxa/">Présentation du projet</a>
-            <a class="dropdown-item" href="/lyoxa/pourquoi-notre-projet/">Pourquoi notre projet</a>
-            <a class="dropdown-item" href="/lyoxa/structure/">Structure</a>
-            <a class="dropdown-item" href="/lyoxa/documents/">Documents</a>
+            <a class="dropdown-item {% if '/lyoxa/' == page.url %}active{% endif %}" href="/lyoxa/">Présentation du projet</a>
+            <a class="dropdown-item {% if '/lyoxa/pourquoi-notre-projet/' == page.url %}active{% endif %}" href="/lyoxa/pourquoi-notre-projet/">Pourquoi notre projet</a>
+            <a class="dropdown-item {% if '/lyoxa/structure/' == page.url %}active{% endif %}" href="/lyoxa/structure/">Structure</a>
+            <a class="dropdown-item {% if '/lyoxa/documents/' == page.url %}active{% endif %}" href="/lyoxa/documents/">Documents</a>
           </div>
         </li>
-        <li class="nav-item active dropdown">
+        <li class="nav-item dropdown {% if page.url contains '/services/' %}active{% endif %}">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuServices">
-            <a class="dropdown-item" href="/services/">Services</a>
-            <a class="dropdown-item" href="/services/fonctionnement-des-demandes/">Fonctionnement des demandes</a>
+            <a class="dropdown-item {% if '/services/' == page.url %}active{% endif %}" href="/services/">Services</a>
+            <a class="dropdown-item {% if '/services/fonctionnement-des-demandes/' == page.url %}active{% endif %}" href="/services/fonctionnement-des-demandes/">Fonctionnement des demandes</a>
           </div>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item {% if '/equipe/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/equipe/">Équipe</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item {% if '/partenaires/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/partenaires/">Partenaires</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item {% if '/nous-soutenir/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/nous-soutenir/">Nous soutenir</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item {% if '/contact/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/contact/">Contact</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item {% if '/formulaire-de-demande/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/formulaire-de-demande/">Nouvelle demande</a>
         </li>
       </ul>

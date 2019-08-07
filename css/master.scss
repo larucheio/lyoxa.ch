@@ -22,6 +22,17 @@
   hyphens: auto;
 }
 
+.multicolumnparagraph {
+  column-count: 1;
+}
+
+@include media-breakpoint-up(md) {
+  .multicolumnparagraph {
+    column-count: 2;
+    column-gap: 3em;
+  }
+}
+
 .file.file-pdf {
   display: inline-block;
   width: 1em;

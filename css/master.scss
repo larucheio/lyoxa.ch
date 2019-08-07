@@ -15,6 +15,13 @@
   background-position: center;
 }
 
+.justify {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 .file.file-pdf {
   display: inline-block;
   width: 1em;

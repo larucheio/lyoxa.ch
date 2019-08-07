@@ -33,6 +33,29 @@
   }
 }
 
+.services-grid > div {
+  border-bottom: 1px solid $gray-200;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.services-grid > div:last-child {
+  border-bottom: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .services-grid > div:nth-child(odd) {
+    border-right: 1px solid $gray-200;
+    padding-right: 1.5em;
+  }
+  .services-grid > div:nth-child(even) {
+    padding-left: 1.5em;
+  }
+  .services-grid > div:nth-last-child(2) {
+    border-bottom: 0;
+  }
+}
+
 .file.file-pdf {
   display: inline-block;
   width: 1em;

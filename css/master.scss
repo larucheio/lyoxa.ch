@@ -6,6 +6,13 @@
 @import "hamburgers/hamburgers";
 @import "navbar";
 
+.jumbotron__home {
+  background-image: url('/img/home/hero-geneve.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .file.file-pdf {
   display: inline-block;
   width: 1em;

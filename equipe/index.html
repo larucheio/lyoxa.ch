@@ -34,7 +34,7 @@ layout: main
   <h2>Comité</h2>
   <div class="row">
     {% for team in site.data.equipe.comite %}
-      <div class="col-lg-4 col-md-6 col-12">
+      <div class="col-lg-3 col-md-4 col-12">
         {%
           include team/card.html
           name=team.name
@@ -50,7 +50,7 @@ layout: main
   <h2>Délégué·e·s aux fonctions internes</h2>
   <div class="row">
     {% for team in site.data.equipe.delegue %}
-      <div class="col-lg-4 col-md-6 col-12">
+      <div class="col-lg-3 col-md-4 col-12">
         {%
           include team/card.html
           name=team.name
@@ -66,7 +66,7 @@ layout: main
   <h2>Consultant·e·s</h2>
   <div class="row">
     {% for team in site.data.equipe.consultant %}
-      <div class="col-lg-4 col-md-6 col-12">
+      <div class="col-lg-3 col-md-4 col-12">
         {%
           include team/card.html
           name=team.name
@@ -82,7 +82,7 @@ layout: main
   <h2>Membres opérationnel·le·s</h2>
   <div class="row">
     {% for team in site.data.equipe.membre-operationnel %}
-      <div class="col-lg-4 col-md-6 col-12">
+      <div class="col-lg-3 col-md-4 col-12">
         {%
           include team/card.html
           name=team.name

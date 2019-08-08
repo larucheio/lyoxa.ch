@@ -56,6 +56,18 @@
   }
 }
 
+.nav-link--cta {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-link--cta {
+    margin-left: 1em;
+    margin-top: 0;
+  }
+}
+
 .file.file-pdf {
   display: inline-block;
   width: 1em;

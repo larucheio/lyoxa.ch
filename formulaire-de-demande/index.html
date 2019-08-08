@@ -60,76 +60,65 @@ vuejs: true
         <label>Le type de service dont vous avez besoin <span class="text-danger">*</span></label>
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.statusLegal">
-            Statuts et légal
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.budgets">
-            Budgets, comptabilité et trésorerie
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.teamManagement">
-            Gestion d'équipe
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.teamBuilding">
-            Constitution d'équipe
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.communicationDesign">
-            Communication et Webdesign
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.autorisations">
-            Autorisations et services de la Ville de Genève
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.consulting">
-            Conseils sur le monde associatif
+            <input class="form-check-input" type="checkbox" v-model="contact.services.legal">
+            Juridique
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
             <input class="form-check-input" type="checkbox" v-model="contact.services.funding">
-            Aide à la recherche de partenariats et de fonds
+            Recherche de fonds
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="contact.services.governance">
+            Gouvernance
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="contact.services.creation">
+            Création d’association
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="contact.services.communication">
+            Communication
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="contact.services.it">
+            Informatique et Graphisme
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="contact.services.finance">
+            Gestion financière (Budgets, Comptabilité, Trésorerie)
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="contact.services.projectManagment">
+            Gestion de projets
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="contact.services.network">
+            Réseau
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
             <input class="form-check-input" type="checkbox" v-model="contact.services.eventPlanning">
-            Organisation d'événements
+            Evénementiel
           </label>
         </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.travelPlanning">
-            Organisation de voyages
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.partyPlanning">
-            Organisation de soirées
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.ongs">
-            Contacts avec les ONGs
-          </label>
-        </div>
+
         <div class="form-check">
           <label class="form-check-label">
             <input class="form-check-input" type="checkbox" v-model="contact.services.other">
@@ -181,18 +170,16 @@ new Vue({
         association: '',
         demand: '',
         services: {
-          statusLegal: false,
-          budgets: false,
-          teamManagement: false,
-          teamBuilding: false,
-          communicationDesign: false,
-          autorisations: false,
-          consulting: false,
+          legal: false,
           funding: false,
+          governance: false,
+          creation: false,
+          communication: false,
+          it: false,
+          finance: false,
+          projectManagment: false,
+          network: false,
           eventPlanning: false,
-          travelPlanning: false,
-          partyPlanning: false,
-          ongs: false,
           other: false,
           otherText: ''
         }

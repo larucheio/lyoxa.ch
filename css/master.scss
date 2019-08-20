@@ -7,6 +7,7 @@
 
 @import "hamburgers/hamburgers";
 @import "navbar";
+@import "footnotes";
 
 .jumbotron__home {
   background-image: url('/img/home/hero-geneve.jpg');
@@ -75,4 +76,17 @@
   background-image: url('/img/icons/file-pdf.svg');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+section {
+  counter-reset: footnotes;
+}
+
+aside {
+  padding-left: 1rem;
+  margin-left: .5rem;
+  margin-bottom: 1rem;
+  border-left: 2px solid $primary;
+  font-style: italic;
+  color: $primary;
 }

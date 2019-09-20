@@ -10,6 +10,8 @@
 @import "timeline";
 @import "footnotes";
 
+@import "print";
+
 .jumbotron__home {
   background-image: url('/img/home/hero-geneve.jpg');
   background-size: cover;
@@ -90,4 +92,8 @@ aside {
   border-left: 2px solid $primary;
   font-style: italic;
   color: $primary;
+}
+
+.for-print {
+  display: none;
 }

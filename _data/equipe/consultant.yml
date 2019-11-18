@@ -22,9 +22,17 @@
   title: "Consultante"
   photo: "nophoto"
 
+- name: "Romain Boillat"
+  title: "Consultant"
+  photo: "nophoto"
+
 - name: "Sylvain Thullen"
   title: "Consultant et Membre opérationnel"
   photo: "nophoto"
+
+- name: "Tanguy Ciccone"
+  title: "Consultant"
+  photo: "ciccone-tanguy"
 
 - name: "Thomas Grasset"
   title: "Consultant"
@@ -33,6 +41,10 @@
 - name: "Thomas Pont"
   title: "Consultant"
   photo: "nophoto"
+
+- name: "Tom Chappuis"
+  title: "Consultant"
+  photo: "chappuis-tom"
 
 - name: "Zélie Antier"
   title: "Consultante et Membre opérationnelle"

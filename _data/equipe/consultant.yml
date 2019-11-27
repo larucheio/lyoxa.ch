@@ -1,7 +1,3 @@
-- name: "Bruno Hausler"
-  title: "Consultant et Membre opérationnel"
-  photo: "hausler-bruno"
-
 - name: "Clémence Aellen"
   title: "Consultante et Membre opérationnelle"
   photo: "aellen-clemence"
@@ -45,7 +41,3 @@
 - name: "Tom Chappuis"
   title: "Consultant"
   photo: "chappuis-tom"
-
-- name: "Zélie Antier"
-  title: "Consultante et Membre opérationnelle"
-  photo: "nophoto"

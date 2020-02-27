@@ -1,3 +1,7 @@
+- name: "Christophe Metzger"
+  title: "Délégué au Développement des Outils associatifs"
+  photo: "nophoto"
+
 - name: "Marc Delacrétaz"
   title: "Délégué à la Banque de Matériel"
   photo: "delacretaz-marc"
@@ -9,7 +13,3 @@
 - name: "Sophie Ratcliff"
   title: "Déléguée aux Conseils"
   photo: "ratcliff-sophie"
-
-- name: "Vincent Davy"
-  title: "Délégué au Développement des Outils associatifs"
-  photo: "davy-vincent"

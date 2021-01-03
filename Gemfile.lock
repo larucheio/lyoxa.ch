@@ -83,7 +83,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86_64-darwin-19
 
 DEPENDENCIES
   html-proofer
@@ -92,4 +91,4 @@ DEPENDENCIES
   jekyll-sitemap
 
 BUNDLED WITH
-   2.2.0
+   2.1.2

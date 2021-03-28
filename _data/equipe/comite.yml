@@ -1,27 +1,31 @@
-- name: "Nicolas Tamayo Lopez"
-  title: "Président"
-  photo: "tamayo-lopez-nicolas"
-
-- name: "Célia Sepe"
-  title: "Secrétaire Générale et membre du Bureau"
-  photo: "sepe-celia"
-
-- name: "Robin Stähli"
-  title: "Trésorier et membre du Bureau"
-  photo: "staehli-robin"
-
 - name: "Cédric Ledermann"
   title: "Délégué au Développement"
   photo: "ledermann-cedric"
+
+- name: "Célia Sepe"
+  title: "Présidente et membre du Bureau"
+  photo: "sepe-celia"
 
 - name: "Hélène Conradin"
   title: "Déléguée à la Formation"
   photo: "conradin-helene"
 
+- name: "Jules Lorenzi"
+  title: "Consultant"
+  photo: "lorenzi-jules"
+
 - name: "Louis Mégroz"
   title: "Délégué aux Relations Publiques et Événements"
   photo: "megroz-louis"
 
-- name: "Thibaud Mabut"
-  title: "Délégué à la Communication"
-  photo: "mabut-thibaud"
+- name: "Nicolas Tamayo Lopez"
+  title: "Délégué à la Recherche juridique"
+  photo: "tamayo-lopez-nicolas"
+
+- name: "Robin Stähli"
+  title: "Trésorier et membre du Bureau"
+  photo: "staehli-robin"
+
+- name: "Sophie Ratcliff"
+  title: "Secrétaire Générale et Déléguée aux Conseils"
+  photo: "ratcliff-sophie"

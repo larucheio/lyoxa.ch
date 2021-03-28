@@ -4,7 +4,7 @@
 
 - name: "Julia Barbe"
   title: "Consultante et Membre opérationnelle"
-  photo: "nophoto"
+  photo: "barbe-julia"
 
 - name: "Laura Pasquier"
   title: "Consultante et Membre opérationnelle"
@@ -13,6 +13,10 @@
 - name: "Laurie Liccardo"
   title: "Consultante et Membre opérationnelle"
   photo: "liccardo-laurie"
+
+- name: "Matthias Junge"
+  title: "Consultant et membre opérationnel"
+  photo: "junge-matthias"
 
 - name: "Michael Netter"
   title: "Consultant et Membre opérationnel"

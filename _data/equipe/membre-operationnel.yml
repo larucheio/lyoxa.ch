@@ -4,9 +4,6 @@
 - name: "André Ribeiro"
   photo: "nophoto"
 
-- name: "Aurélien Celik"
-  photo: "celik-aurelien"
-
 - name: "Eleonore Monti"
   photo: "nophoto"
 
@@ -20,6 +17,9 @@
   photo: "nophoto"
 
 - name: "Marta Bem"
+  photo: "nophoto"
+
+- name: "Mélissa Gündüz"
   photo: "nophoto"
 
 - name: "Meriem El May"

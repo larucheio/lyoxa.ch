@@ -22,11 +22,11 @@
   title: "Consultant et Membre opérationnel"
   photo: "netter-michael"
 
-- name: "Pauline Venti"
-  title: "Consultante"
+- name: "Romain Boillat"
+  title: "Consultant"
   photo: "nophoto"
 
-- name: "Romain Boillat"
+- name: "Romain Prina"
   title: "Consultant"
   photo: "nophoto"
 
@@ -37,10 +37,6 @@
 - name: "Thomas Pont"
   title: "Consultant"
   photo: "pont-thomas"
-
-- name: "Tom Chappuis"
-  title: "Consultant"
-  photo: "chappuis-tom"
 
 - name: "Vincent Davy"
   title: "Consultant et Membre opérationnel"

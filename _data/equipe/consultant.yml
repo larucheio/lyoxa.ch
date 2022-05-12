@@ -1,3 +1,7 @@
+- name: "Alicia Cornet"
+  title: "Consultante et Membre opérationnelle"
+  photo: "cornet-alicia"
+
 - name: "Guillaume Tschuy"
   title: "Consultant et Membre opérationnel"
   photo: "tschuy-guillaume"
@@ -5,10 +9,6 @@
 - name: "Julia Barbe"
   title: "Consultante et Membre opérationnelle"
   photo: "barbe-julia"
-
-- name: "Laura Pasquier"
-  title: "Consultante et Membre opérationnelle"
-  photo: "nophoto"
 
 - name: "Laurie Liccardo"
   title: "Consultante et Membre opérationnelle"
@@ -21,10 +21,6 @@
 - name: "Michael Netter"
   title: "Consultant et Membre opérationnel"
   photo: "netter-michael"
-
-- name: "Romain Boillat"
-  title: "Consultant"
-  photo: "nophoto"
 
 - name: "Romain Prina"
   title: "Consultant"

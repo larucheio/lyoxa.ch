@@ -6,16 +6,6 @@ vuejs: true
 
 <section class="container mt-5">
   <h1>Formulaire de demande</h1>
-
-  <div class="alert alert-primary mt-5" role="alert">
-    <p>
-      Pendant les fêtes, LYOXA ne traitera pas de nouvelles demandes entre le 24 décembre et le 8 janvier 2023.
-    </p>
-    <p>
-      Nos services reprendront entièrement dès le 8 janvier 2023. Dans l’intervalle, nous vous conseillons de consulter nos <a href="/ressources">canevas organisationnels</a> afin de prendre connaissance d’éléments pouvant vous intéresser!
-    </p>
-  </div>
-
   <div id="contact">
     <form v-on:submit.prevent="onSubmit" id="needs-validation" v-if="!formSubmittedSuccessfully && !errorAfterSubmission" novalidate>
       <p><span class="text-danger">*</span> = Champ requis</p>

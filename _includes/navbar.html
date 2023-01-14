@@ -15,15 +15,16 @@
         <li class="nav-item {% if '/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/">Accueil</a>
         </li>
-        <li class="nav-item dropdown {% if page.url contains '/lyoxa/' %}active{% endif %}">
+        <li class="nav-item dropdown {% if page.url contains '/association/' %}active{% endif %}">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLyoxa" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Lyoxa
+            Association
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLyoxa">
-            <a class="dropdown-item {% if '/lyoxa/' == page.url %}active{% endif %}" href="/lyoxa/">Présentation du projet</a>
-            <a class="dropdown-item {% if '/lyoxa/pourquoi-notre-projet/' == page.url %}active{% endif %}" href="/lyoxa/pourquoi-notre-projet/">Pourquoi notre projet</a>
-            <a class="dropdown-item {% if '/lyoxa/structure/' == page.url %}active{% endif %}" href="/lyoxa/structure/">Structure</a>
-            <a class="dropdown-item {% if '/lyoxa/documents/' == page.url %}active{% endif %}" href="/lyoxa/documents/">Documents</a>
+            <a class="dropdown-item {% if '/association/presentation/' == page.url %}active{% endif %}" href="/association/presentation/">Présentation</a>
+            <a class="dropdown-item {% if '/association/structure/' == page.url %}active{% endif %}" href="/association/structure/">Structure</a>
+            <a class="dropdown-item {% if '/association/equipe/' == page.url %}active{% endif %}" href="/association/equipe/">Équipe</a>
+            <a class="dropdown-item {% if '/association/partenaires/' == page.url %}active{% endif %}" href="/association/partenaires/">Partenaires</a>
+            <a class="dropdown-item {% if '/association/documents/' == page.url %}active{% endif %}" href="/association/documents/">Documents</a>
           </div>
         </li>
         <li class="nav-item dropdown {% if page.url contains '/services/' %}active{% endif %}">
@@ -31,19 +32,13 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuServices">
-            <a class="dropdown-item {% if '/services/' == page.url %}active{% endif %}" href="/services/">Services</a>
-            <a class="dropdown-item {% if '/services/permanence-de-conseil-associatif/' == page.url %}active{% endif %}" href="/services/permanence-de-conseil-associatif/">Permanence de conseil associatif</a>
+            <a class="dropdown-item {% if '/services/presentation/' == page.url %}active{% endif %}" href="/services/presentation/">Présentation</a>
+            <a class="dropdown-item" href="/conseil/">Demander un conseil</a>
+            <a class="dropdown-item {% if '/services/permanence/' == page.url %}active{% endif %}" href="/services/permanence/">Permanence</a>
+            <a class="dropdown-item" href="https://bdm.lyoxa.ch/" target="_blank">Louer du matériel</a>
+            <a class="dropdown-item {% if '/services/outils-associatifs/' == page.url %}active{% endif %}" href="/services/outils-associatifs/">Outils Associatifs</a>
             <a class="dropdown-item {% if '/services/fonctionnement-des-demandes/' == page.url %}active{% endif %}" href="/services/fonctionnement-des-demandes/">Fonctionnement des demandes</a>
           </div>
-        </li>
-        <li class="nav-item {% if '/ressources/' == page.url %}active{% endif %}">
-          <a class="nav-link" href="/ressources/">Ressources</a>
-        </li>
-        <li class="nav-item {% if '/equipe/' == page.url %}active{% endif %}">
-          <a class="nav-link" href="/equipe/">Équipe</a>
-        </li>
-        <li class="nav-item {% if '/partenaires/' == page.url %}active{% endif %}">
-          <a class="nav-link" href="/partenaires/">Partenaires</a>
         </li>
         <li class="nav-item {% if '/nous-soutenir/' == page.url %}active{% endif %}">
           <a class="nav-link" href="/nous-soutenir/">Nous soutenir</a>
@@ -52,12 +47,7 @@
           <a class="nav-link" href="/contact/">Contact</a>
         </li>
         <li class="nav-item">
-          <a href="https://www.facebook.com/lyoxa.consulting.associatif/" class="nav-link">
-            <img alt="Facebook's logo" height="24" src="/img/social/facebook-logo.svg" width="24" style="vertical-align: unset;">
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link--cta btn btn-primary" href="/formulaire-de-demande/">Nouvelle demande</a>
+          <a class="nav-link--cta btn btn-primary" href="/conseil/">Demander un conseil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link--cta btn btn-primary" href="https://bdm.lyoxa.ch/" target="_blank">Louer du matériel</a>

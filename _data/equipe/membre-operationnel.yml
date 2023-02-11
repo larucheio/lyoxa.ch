@@ -1,11 +1,11 @@
 - name: "André Ribeiro"
   photo: "nophoto"
 
+- name: "Clara Scalabre"
+  photo: "nophoto"
+
 - name: "Johan Tranchellini"
   photo: "tranchellini-johan"
-
-- name: "Laura Pasquier"
-  photo: "nophoto"
 
 - name: "Louise Benn"
   photo: "benn-louise"
@@ -16,5 +16,3 @@
 - name: "Pauline Venti"
   photo: "venti-pauline"
 
-- name: "Romain Boillat"
-  photo: "nophoto"

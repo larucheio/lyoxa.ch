@@ -1,19 +1,9 @@
-- title: laruche
-  description: "Présence digitale, développement d'applications et de sites web."
-  link: "https://laruche.io"
-  logo: "laruche.svg"
+- title: "Maison Internationale des Associations"
+  description: "Un espace pour l’expression associative genevoise et internationale"
+  link: "https://mia-ge.ch/"
+  logo: "mia.png"
 
-- title: Hypersquad
-  description: "Studio de graphisme pluridisciplinaire et nouveaux médias."
-  link: "https://hypersquad.ch"
-  logo: "hypersquad.svg"
-
-- title: "Bassment!"
-  description: "Association promouvant la culture et son accessibilité."
-  link: "https://bassment.ch"
-  logo: "bassment.svg"
-
-- title: "DJ-R"
-  description: "Location de sonorisation et d'éclairage pour votre événement."
-  link: "http://www.dj-r.ch/"
-  logo: "dj-r.svg"
+- title: "À nous de jouer"
+  description: "Plateforme des projets et associations de jeunes. Inspire-toi, interroge-toi, outille-toi et engage-toi!"
+  link: "https://anousdejouer.ch/"
+  logo: "anousdejouer.png"

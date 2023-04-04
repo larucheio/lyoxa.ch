@@ -7,3 +7,18 @@
   description: "Plateforme des projets et associations de jeunes. Inspire-toi, interroge-toi, outille-toi et engage-toi!"
   link: "https://anousdejouer.ch/"
   logo: "anousdejouer.png"
+
+- title: "Unité Vie associative"
+  description: "Un service de la Ville de Genève en soutien du tissu associatif genevois"
+  link: "https://www.geneve.ch/fr/public/associations/soutien-vie-associative-domaine-cohesion-sociale"
+  logo: "villedegeneve.png"
+
+- title: "Service de la jeunesse"
+  description: "Le service qui mène la politique de la jeunesse de la Ville de Genève et met en oeuvre des actions par et pour les jeunes"
+  link: "https://www.geneve.ch/fr/autorites-administration/administration-municipale/departement-cohesion-sociale-solidarite/services-municipaux/service-jeunesse"
+  logo: "villedegeneve.png"
+
+- title: "Service Agenda 21"
+  description: "Le service en charge de la mise en oeuvre de la politique de développement durable de la Ville de Genève"
+  link: "https://www.geneve.ch/fr/autorites-administration/administration-municipale/departement-finances-environnement-logement/services-municipaux/service-agenda-ville-durable"
+  logo: "villedegeneve.png"

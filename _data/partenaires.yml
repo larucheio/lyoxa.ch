@@ -22,3 +22,8 @@
   description: "Le service en charge de la mise en oeuvre de la politique de développement durable de la Ville de Genève"
   link: "https://www.geneve.ch/fr/autorites-administration/administration-municipale/departement-finances-environnement-logement/services-municipaux/service-agenda-ville-durable"
   logo: "villedegeneve.png"
+
+- title: "CAGI"
+  description: "Le CAGI assiste les organisations internationales non gouvernementales (ONG) établies ou désireuses de s’installer dans la région genevoise."
+  link: "https://www.cagi.ch/fr/"
+  logo: "cagi.png"

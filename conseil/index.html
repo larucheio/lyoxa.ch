@@ -6,10 +6,21 @@ vuejs: true
 
 <section class="container mt-5">
   <h1>Demander un conseil</h1>
+
+  <p class="lead">
+    Vous avez un projet associatif ou êtes bénévole/employé·e d’une association et avez besoin de conseils ?
+  </p>
+  <p>
+    Prenez connaissance de nos <a href="/services/outils-associatifs/">outils associatifs</a>, la réponse à vos questions s’y trouve peut-être ! Vous pouvez également vous rendre à notre <a href="/services/permanence/">permanence en conseil associatif</a> les premiers mercredis de chaque mois ! Nos membres répondront avec plaisir à vos questions le temps d’un entretien.
+  </p>
+  <p>
+    Pour nous faire une demande de conseil personnalisé, remplissez le formulaire suivant :
+  </p>
+
+  <hr class="my-5">
+
   <div id="contact">
     <form v-on:submit.prevent="onSubmit" id="needs-validation" v-if="!formSubmittedSuccessfully && !errorAfterSubmission" novalidate>
-      <p><span class="text-danger">*</span> = Champ requis</p>
-
       <div class="alert alert-danger" role="alert" v-if="formIsSubmitted && !formIsValid">
         Une/plusieurs erreur(s) est/sont présente(s) dans le formulaire; merci de la/les corriger.
       </div>

@@ -2,6 +2,14 @@
   title: "Consultante et Membre opérationnelle"
   photo: "cornet-alicia"
 
+- name: "Coralie Dorthe"
+  title: "Consultante et Membre opérationnelle"
+  photo: "nophoto"
+
+- name: "Ilias Schneider"
+  title: "Consultant et Membre opérationnel"
+  photo: "nophoto"
+
 - name: "Laurie Liccardo"
   title: "Consultante et Membre opérationnelle"
   photo: "liccardo-laurie"
@@ -10,9 +18,17 @@
   title: "Consultant et membre opérationnel"
   photo: "junge-matthias"
 
+- name: "Maxime Barthassat"
+  title: "Consultant et Membre opérationnel"
+  photo: "nophoto"
+
 - name: "Michael Netter"
   title: "Consultant et Membre opérationnel"
   photo: "netter-michael"
+
+- name: "Pietro Gerundino"
+  title: "Consultant et Membre opérationnel"
+  photo: "nophoto"
 
 - name: "Romain Prina"
   title: "Consultant"

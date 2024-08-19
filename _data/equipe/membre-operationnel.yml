@@ -1,6 +1,18 @@
 - name: "André Ribeiro"
   photo: "nophoto"
 
+- name: "Antoine Bézuchet"
+  photo: "nophoto"
+
+- name: "Aurélien Celik"
+  photo: "nophoto"
+
+- name: "Céline Daviet"
+  photo: "nophoto"
+
+- name: "Chirine Bouilouta"
+  photo: "nophoto"
+
 - name: "Emilie Bretton"
   title: "Membre opérationnelle Secteur Formation"
   photo: "bretton-emilie"
@@ -15,14 +27,17 @@
 - name: "Mélissa Gündüz"
   photo: "gunduz-melissa"
 
+- name: "Mikhail Rojkov"
+  photo: "nophoto"
+
 - name: "Robin Stähli"
   title: "Membre opérationnel Secteurs Conseils et Formation"
   photo: "staehli-robin"
 
+- name: "Sarah Conde Pombo"
+  photo: "nophoto"
+
 - name: "Tanguy Ciccone"
   title: "Membre opérationnel Secteur Conseil"
   photo: "ciccone-tanguy"
-
-- name: "Thomas Aguiar"
-  photo: "nophoto"
 

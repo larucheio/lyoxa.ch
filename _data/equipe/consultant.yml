@@ -15,8 +15,12 @@
   photo: "liccardo-laurie"
 
 - name: "Matthias Junge"
-  title: "Consultant et membre opérationnel"
+  title: "Consultant et Membre opérationnel"
   photo: "junge-matthias"
+
+- name: "Marc-Olivier Busslinger"
+  title: "Consultant et Membre opérationnel"
+  photo: "nophoto"
 
 - name: "Maxime Barthassat"
   title: "Consultant et Membre opérationnel"
@@ -35,6 +39,10 @@
   photo: "prina-romain"
 
 - name: "Sylvain Thullen"
+  title: "Consultant et Membre opérationnel"
+  photo: "nophoto"
+
+- name: "Thomas Aguiar"
   title: "Consultant et Membre opérationnel"
   photo: "nophoto"
 

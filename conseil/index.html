@@ -7,232 +7,28 @@ vuejs: true
 <section class="container mt-5">
   <h1>Demander un conseil</h1>
 
-  <p class="lead">
-    Vous avez un projet associatif ou êtes bénévole/employé·e d’une association et avez besoin de conseils ?
+  <p class="lead alert alert-info">
+    Le formulaire de demande de conseil est fermé jusqu’au 1er mars 2025.
+  </p>
+  
+  <p>
+    Voilà plusieurs années que la popularité des services de Lyoxa ne cesse de grandir. Cela se traduit principalement par une augmentation constante des demandes de conseil individuel. Depuis le début de l’année 2024, nous en avons un nombre record (211 demandes à ce jour, contre 152 sur toute l’année dernière).
   </p>
   <p>
-    Prenez connaissance de nos <a href="/services/outils-associatifs/">outils associatifs</a>, la réponse à vos questions s’y trouve peut-être ! Vous pouvez également vous rendre à notre <a href="/services/permanence/">permanence en conseil associatif</a> les premiers mercredis de chaque mois ! Nos membres répondront avec plaisir à vos questions le temps d’un entretien.
+    Cela fait un certain temps que cette augmentation de la demande a été identifiée comme un risque structurel pour l’association. C’est d’ailleurs la principale raison qui a servi de base à certaines réformes incluses dans la stratégie de développement 2025-2027 de l’association, adoptée lors de l'assemblée générale du 27 mars 2024. Pour nous donner les moyens de répondre à ce problème, nous avons démarré une levée de fonds en vue de financer des postes qui viendraient d’une part renforcer la création d’accélérateurs (à savoir des ateliers, formations, documents vulgarisants, générateurs, etc.) et d’autre part soulager la charge administrative de nos bénévoles.
+Malheureusement nous n’avons pas reçu les fonds nécessaires pour mettre en place cette stratégie selon le calendrier prévu, soit dès janvier 2025. Nous continuons d’y travailler et souhaitons déployer ces mesures dès que possible.
   </p>
   <p>
-    Pour nous faire une demande de conseil personnalisé, remplissez le formulaire suivant :
+    Aujourd’hui, en l’état, nous ne sommes plus en mesure de répondre à vos demandes avec qualité et sans compromettre la santé de nos bénévoles. C’est pourquoi nous avons pris la décision de fermer le formulaire de demande de conseil jusqu’au 1er mars 2025.
   </p>
-
-  <hr class="my-5">
-
-  <div id="contact">
-    <form v-on:submit.prevent="onSubmit" id="needs-validation" v-if="!formSubmittedSuccessfully && !errorAfterSubmission" novalidate>
-      <div class="alert alert-danger" role="alert" v-if="formIsSubmitted && !formIsValid">
-        Une/plusieurs erreur(s) est/sont présente(s) dans le formulaire; merci de la/les corriger.
-      </div>
-
-      <div class="form-row">
-        <div class="form-group col-sm-6">
-          <label for="contactInputFirstname">Prénom <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" id="contactInputFirstname" v-model="contact.firstName" required>
-          <div class="invalid-feedback">
-            Le prénom est requis
-          </div>
-        </div>
-        <div class="form-group col-sm-6">
-          <label for="contactInputName">Nom <span class="text-danger">*</span></label>
-          <input class="form-control" id="contactInputName" v-model="contact.name" required>
-          <div class="invalid-feedback">
-            Le nom est requis
-          </div>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-sm-6">
-          <label for="contactInputEmail">Adresse e-mail <span class="text-danger">*</span></label>
-          <input type="email" class="form-control" id="contactInputEmail" v-model="contact.email" required>
-          <div class="invalid-feedback">
-            L'adresse e-mail est requise
-          </div>
-        </div>
-        <div class="form-group col-sm-6">
-          <label for="contactInputPhone">Numéro de téléphone <span class="text-danger">*</span></label>
-          <input type="tel" class="form-control" id="contactInputPhone" v-model="contact.phone" required>
-          <div class="invalid-feedback">
-            Le numéro de téléphone est requis
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="contactInputAssociation">Nom de l'association/du collectif représenté</label>
-        <input class="form-control" id="contactInputAssociation" v-model="contact.association">
-      </div>
-      <div class="form-group">
-        <label for="contactInputDemand">Votre demande en détails <span class="text-danger">*</span></label>
-        <textarea class="form-control" id="contactInputDemand" rows="8" cols="80" v-model="contact.demand" required></textarea>
-        <div class="invalid-feedback">
-          Le détail de votre demande est requis
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Le type de service dont vous avez besoin <span class="text-danger">*</span></label>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.legal">
-            Juridique
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.funding">
-            Recherche de fonds
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.governance">
-            Gouvernance
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.creation">
-            Création d’association
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.communication">
-            Communication
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.it">
-            Informatique et Graphisme
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.finance">
-            Gestion financière (Budgets, Comptabilité, Trésorerie)
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.projectManagment">
-            Gestion de projets
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.network">
-            Réseau
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.eventPlanning">
-            Évènementiel
-          </label>
-        </div>
-
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" v-model="contact.services.other">
-            Autre
-          </label>
-        </div>
-        <div class="form-group" v-if="contact.services.other">
-          <label for="contactInputServiceOther">Autre(s) service(s)</label>
-          <textarea class="form-control" id="contactInputServiceOther" rows="8" cols="80" v-model="contact.services.otherText"></textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="contactInputBiais">Par quel biais nous avez vous connus?</label>
-        <input class="form-control" id="contactInputBiais" v-model="contact.biais">
-      </div>
-
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="contactInputCG" required>
-        <label class="form-check-label" for="contactInputCG">
-          J'ai lu et j'accepte les <a href="/conseil/conditions-generales/">conditions générales</a> de Lyoxa. <span class="text-danger">*</span>
-        </label>
-        <div class="invalid-feedback">
-          Vous devez lire et accepter les conditions générales de Lyoxa.
-        </div>
-      </div>
-
-      <div class="alert alert-danger" role="alert" v-if="formIsSubmitted && !formIsValid">
-        Une/plusieurs erreur(s) est/sont présente(s) dans le formulaire; merci de la/les corriger.
-      </div>
-
-      <button type="submit" class="btn btn-primary">Envoyer</button>
-    </form>
-
-    <div class="alert alert-success" role="alert" v-if="formSubmittedSuccessfully">
-      Merci de nous avoir transmis votre demande, un gestionnaire de notre équipe prendra rapidement contact avec vous.
-    </div>
-
-    <div class="alert alert-danger" role="alert" v-if="errorAfterSubmission">
-      Une erreur s'est produite lors de la soumission du formulaire. Merci de réessayer ou de <a href="mailto:julien.grunhagel@lyoxa.ch" class="alert-link">contacter le support</a>.
-    </div>
-  </div>
+  <p>
+    Cela étant, nos services de <a href="/services/permanence/">permanences de conseil associatif</a> et d’<a href="/services/atelier-creation-association/">ateliers de création d’association</a> restent ouverts. Ceux-ci auront lieu les 4 décembre 2024, 8 janvier et 5 février 2025.
+Vous pouvez également retrouver les canevas sur la création d’association, la tenue d’une trésorerie ou la recherche de fonds sur la page dédiée (<a href="https://lyoxa.ch/services/outils-associatifs/">https://lyoxa.ch/services/outils-associatifs/</a>).
+  </p>
+  <p>
+    Vous avez néanmoins un rôle à jouer dans la réouverture de ce service par deux gestes simples. Premièrement, vous pouvez en parler autour de vous. Peut-être vous rendrez-vous compte que vous connaissez des personnes ou des entités qui seraient intéressées à soutenir ce projet ? Si tel est le cas, n’hésitez pas à nous le faire savoir et, qui sait, peut-être pourrons-nous repartir de plus belle ? Deuxièmement, vous pouvez nous soutenir financièrement. Tout don est le bienvenu, vous trouverez toutes les informations nécessaires à la page suivante: <a href="/nous-soutenir/">https://lyoxa.ch/nous-soutenir/</a>.
+  </p>
+  <p>
+    Dans tous les cas, nous vous remercions pour l’intérêt que vous portez à notre association et regrettons de ne pouvoir momentanément pas vous aider.
+  </p>
 </section>
-
-<script>
-new Vue({
-  el: '#contact',
-  data () {
-    return {
-      formIsSubmitted: false,
-      servicesAreInvalid: false,
-      formIsValid: false,
-      formSubmittedSuccessfully: false,
-      errorAfterSubmission: false,
-      contact: {
-        firstName: '',
-        name: '',
-        email: '',
-        phone: '',
-        association: '',
-        demand: '',
-        services: {
-          legal: false,
-          funding: false,
-          governance: false,
-          creation: false,
-          communication: false,
-          it: false,
-          finance: false,
-          projectManagment: false,
-          network: false,
-          eventPlanning: false,
-          other: false,
-          otherText: ''
-        }
-      }
-    }
-  },
-  methods: {
-    validateForm () {
-      const form = document.getElementById('needs-validation')
-      if (form.checkValidity() !== false) {
-        this.formIsValid = true
-        return true
-      }
-      form.classList.add('was-validated')
-      return false
-    },
-    onSubmit () {
-      this.formIsSubmitted = true
-      if (this.validateForm()) {
-        let apiURL = 'https://bp60k0083l.execute-api.eu-central-1.amazonaws.com/prod/lyoxaFormSlack'
-        axios
-          .post(apiURL, JSON.stringify(this.contact))
-          .then(response => {
-            this.formSubmittedSuccessfully = true
-            this.errorAfterSubmission = false
-          }, response => {
-            this.formSubmittedSuccessfully = false
-            this.errorAfterSubmission = true
-          })
-      }
-    }
-  }
-})
-</script>

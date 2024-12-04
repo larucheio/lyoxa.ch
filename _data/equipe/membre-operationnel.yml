@@ -14,30 +14,33 @@
   photo: "nophoto"
 
 - name: "Emilie Bretton"
-  title: "Membre opérationnelle Secteur Formation"
   photo: "bretton-emilie"
 
 - name: "Hélène Conradin"
-  title: "Membre opérationnelle Secteur Formation"
   photo: "conradin-helene"
 
 - name: "Johan Tranchellini"
   photo: "tranchellini-johan"
 
+- name: "Marc Delacrétaz"
+  photo: "delacretaz-marc"
+
 - name: "Mélissa Gündüz"
   photo: "gunduz-melissa"
 
-- name: "Mikhail Rojkov"
-  photo: "nophoto"
-
 - name: "Robin Stähli"
-  title: "Membre opérationnel Secteurs Conseils et Formation"
   photo: "staehli-robin"
 
 - name: "Sarah Conde Pombo"
   photo: "nophoto"
 
+- name: "Sofia Yaiche"
+  photo: "nophoto"
+
 - name: "Tanguy Ciccone"
   title: "Membre opérationnel Secteur Conseil"
   photo: "ciccone-tanguy"
+
+- name: "Vincent Davy"
+  photo: "davy-vincent"
 
